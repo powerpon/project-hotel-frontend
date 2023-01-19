@@ -1,0 +1,83 @@
+:root{
+    --footer-color: rgb(47, 46, 46, 0.877);
+    --btn-color: #ffd392;
+    --btn-color-hover: #ba883e;
+    --hi-font-color: rgb(255, 242, 212);
+}
+
+#footer{
+    background-color: var(--footer-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#upBtn{
+    display: none;
+    border-radius: 50% !important;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+}
+
+@media screen and (max-width: 960px){
+    #upBtn{
+        display: block;
+    }
+}
+
+.form-wrappers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formInputs{
+    background-color: white;
+    margin: 20px 0 !important;
+    width: 100%;
+}
+
+.submit-buttons{
+    background-color: var(--btn-color) !important;
+    margin-bottom: 50px !important;
+    color: black;
+}
+
+.submit-buttons:hover{
+    background-color: var(--btn-color-hover) !important;
+}
+
+.hi-titles{
+    color: var(--hi-font-color);
+    font-size: 32px !important;
+    font-style: italic;
+    margin-top: 20px !important;
+    text-align: center;
+}
+
+.hi-infos{
+    color: var(--hi-font-color);
+    font-size: 18px !important;
+    margin: 10px 0 !important;
+    text-align: center;
+}
+
+.icon-wrappers{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.socials{
+    font-size: 50px !important;
+    cursor: pointer;
+    color: white;
+    margin: 0 15px;
+}
+
+.socials:hover{
+    color: var(--hover-color);
+    transition: 0.4s;
+}

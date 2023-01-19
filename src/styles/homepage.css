@@ -1,0 +1,151 @@
+:root{
+   --hover-color:   #ba883e;
+    --star-wrapper-color: rgb(39, 56, 120);
+    --star-wrapper-underline-color: rgb(64, 81, 145);
+    --carousel-dot-color: rgb(0 0 0 / 87%);
+    --star-color: yellow;
+    --card-color: rgb(47, 46, 46, 0.877);
+    --hopeage-icon-color: black;
+    --booking-section-color: rgb(255, 242, 212);
+    --quote-color: rgb(255, 97, 97);
+}
+
+.homepage-icons:hover{
+    color: var(--hover-color);
+    transition: 0.4s;
+}
+
+.homepage-sections{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1000px;
+    margin: 10px 0;
+    border-bottom: 5px solid var(--card-color);
+}
+
+@media screen and (max-width: 960px){
+    .homepage-sections{
+        width: 100%;
+    }
+}
+
+.carousel .control-dots .dot {
+    background: var(--carousel-dot-color) !important;
+}
+
+.slide-imgs{
+    height: 500px;
+    object-fit: contain;
+}
+
+.star-wrappers{
+    background-color: var(--star-wrapper-color);
+    margin: 10px 0;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    border-bottom: 15px solid var(--star-wrapper-underline-color);
+}
+
+.stars{
+    font-size: 50px !important;
+    color: var(--star-color);
+}
+
+.section-positioners{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.icon-groups{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.homepage-icons{
+    font-size: 50px !important;
+    cursor: pointer;
+    color: var(--hopeage-icon-color);
+}
+
+.section-titles{
+    font-size: 50px !important;
+    font-weight: bold !important;
+    width: 100%;
+}
+
+.booking-sections{
+    display: flex;
+    background-color: var(--booking-section-color);
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.booking-headers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.booking-card{
+    background-color: var(--star-wrapper-color);
+    flex: 1;
+    max-width: 400px;
+}
+
+.rating-boxes{
+    background-color: var(--star-wrapper-underline-color);
+    width: 100px;
+    margin-left: 10px;
+}
+
+.booking-quotes{
+    font-size: 50px !important;
+    text-align: center;
+    width: 100% !important;
+    color: var(--quote-color);
+}
+
+.booking-texts{
+    text-align: center;
+    color: white;
+    font-size: 32px !important;
+    margin: 10px !important;
+    font-weight: bold !important;
+}
+
+.hotel-cards{
+    background-color: var(--booking-section-color);
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.hote-card-text-wrappers{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 14px;
+}
+
+#image-holder{
+    width: 600px;
+    height: 600px;
+}
+
+@media screen and (max-width: 1100px) {
+    #image-holder{
+        width: 100%;
+    }
+}
+

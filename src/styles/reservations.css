@@ -1,0 +1,39 @@
+:root{
+    --reserve-btn-color: #ffd392;
+}
+
+.react-datepicker__day--outside-month{
+    visibility: hidden;
+}
+
+.reservations-section-wrappers{
+    width: 100%;
+    height: 800px;
+    background-color: var(--booking-section-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.reservations-labels{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px!important;
+    color: var(--star-wrapper-color);
+    font-size: 25px!important;
+}
+
+.reservations-form-wrappers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.reserve-btns{
+    background-color: var(--reserve-btn-color)!important;
+    margin-top: 50px!important;
+    color: black;
+}
+
+.reserve-btns:hover{
+    background-color: var(--btn-color-hover)!important;
+}

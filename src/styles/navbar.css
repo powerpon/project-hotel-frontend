@@ -1,0 +1,41 @@
+.burger-wrapper {
+    display: none;
+    justify-content: left;
+    flex-grow: 1;
+}
+
+@media  screen and (max-width: 900px){
+    .burger-wrapper {
+        display: flex;
+    }
+}
+
+.logo-img{
+    filter: invert(1);
+    width: 100px;
+}
+
+.buttons-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.drop-down-buttons{
+    display: block;
+    background-color: var(--card-color) !important;
+    width: 100% !important;
+    border: 1px solid black !important;
+    border-radius: 0 !important;
+}
+
+@media  screen and (max-width: 900px){
+    .buttons-wrapper{
+        display: none;
+    }
+}
+
+.nav-items:hover{
+    color: var(--hover-color);
+    transition: 0.4s;
+}
